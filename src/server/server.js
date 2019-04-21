@@ -20,7 +20,7 @@ app.use(session({
 
 app.use('/', auth({
 	passwordFile: path.join(__dirname,'users.json'),
-	pathToProtect: path.join(__dirname, "../../", 'dist'),
+	pathToProtect: path.join(__dirname, '../../dist'),
 	registerView: 'register',
 	successRegisterView: 'registerSuccess',
 	errorRegisterView: 'registerError',
