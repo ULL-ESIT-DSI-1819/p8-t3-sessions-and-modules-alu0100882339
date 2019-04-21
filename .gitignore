@@ -2,3 +2,4 @@ node_modules/
 express-start
 package-lock.json
 users.json
+local_settings.py
