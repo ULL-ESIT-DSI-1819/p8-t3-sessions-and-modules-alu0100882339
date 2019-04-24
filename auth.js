@@ -42,7 +42,7 @@ module.exports = function(options) {
 			res.render(loginView);
 		}
 
-		else if ((req.session.username)) {
+		else if ((req.session.username)) { //no hace falta
 			res.render(successLoginView, {username:req.session.username});
 		}
 	
@@ -60,7 +60,7 @@ module.exports = function(options) {
 				req.session.username = req.body.username;
 				req.session.password = req.body.password;
 				req.session.admin = true;
-				return res.render(succesLoginView, {username:req.session.useranme});
+				return res.render(successLoginView, {username:req.session.useranme});
 			
 			}
 			else return res.render(errorLoginView);
